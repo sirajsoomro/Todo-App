@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input {
+            border: 1px solid black;
+        }
+
+        #SecDiv {
+            color: blueviolet;
+        }
+
+        @media screen and (max-width: 480px) {
+            #mainDiv {
+                margin-top: 0%;
+            }
+
+            input {
+                margin-top: 0%;
+            }
+
+        }
+
+        @media screen and (min-width: 480px) {
+            #mainDiv {
+                margin-top: 0%;
+
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-sky-300 font-serif">
+    <div id="mainDiv" class="w-96 h-96 p-5 bg-white m-auto mt-28 rounded">
+        <h2 class="text-2xl font-bold">Todo App</h2>
+        <div class="flex mt-12">
+            <input class="w-64 h-12 mt-3 rounded outline-none" name="Todo list" required type="text" id="textplace"placeholder="Add your new todo">
+            <button id="addbutton" class="bg-sky-300 rounded font-bold h-12 mt-3 ml-3 px-2"onclick="func()">ADD</button>
+        </div>
+        <div id="loopContainer" class="overflow-auto h-56 py-3"></div>
+
+        
+</body>
+<script src="App.js"></script>
+</html>
